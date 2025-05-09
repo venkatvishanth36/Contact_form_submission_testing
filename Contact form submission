@@ -1,0 +1,40 @@
+This project demonstrates how to automate the submission of a contact form using Selenium WebDriver with Java. It targets the GlobalSQA Contact Us page and fills out required fields. It's intended for learning or testing environments, especially where CAPTCHA handling is required.
+
+📌 Project Overview
+Uses Selenium WebDriver to automate form interaction
+
+Implements explicit waits to ensure elements are interactable
+
+Demonstrates form filling and submission logic
+
+Contains a placeholder for CAPTCHA handling
+
+Clean-up using try-catch-finally structure
+
+💡 Features
+✅ Fill out form fields
+✅ Uses WebDriverWait for element synchronization
+🧩 CAPTCHA handling hint (manual or API-based)
+💥 Basic error handling
+🚗 Clean browser session close
+
+🛠️ Technologies Used
+Java 21+
+
+Selenium WebDriver 4.x
+
+ChromeDriver
+
+WebDriverWait / ExpectedConditions
+
+📈 Future Improvements
+Integrate CAPTCHA-solving APIs
+
+Use Page Object Model (POM) design
+
+Add logging and reporting
+
+Accept test data from CSV or JSON
+
+📜 License
+This project is open source and available under the MIT License.
