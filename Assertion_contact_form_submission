@@ -1,0 +1,35 @@
+Assertion_contact_form_submission
+
+This project automates the process of filling out a contact form using Selenium WebDriver in Java, with built-in logging and an optional assertion example for post-submission validation.
+
+📌 Project Overview
+Purpose: Demonstrates how to navigate to a contact page, fill in form fields, and optionally verify form submission.
+
+Key Features:
+
+Explicit waits for all form elements
+
+Console logging for each step
+
+Placeholder for CAPTCHA handling
+
+Optional assertion logic for success message validation
+
+💻 Technologies Used
+Java 21+
+
+Selenium WebDriver 4.x
+
+ChromeDriver
+
+JUnit/TestNG (optional for assertions)
+
+⚠️ CAPTCHA Note
+The form includes a reCAPTCHA widget.
+
+Production automation requires either:
+
+A test environment with CAPTCHA disabled
+
+Integration with a CAPTCHA-solving service (e.g., 2Captcha)
+
