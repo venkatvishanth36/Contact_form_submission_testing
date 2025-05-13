@@ -1,0 +1,43 @@
+This project demonstrates automated form submission using Selenium WebDriver in Java, with explicit waits applied to improve synchronization and stability.
+
+📌 Features
+Uses Selenium WebDriver with ChromeDriver
+
+Implements explicit waits via WebDriverWait
+
+Fills in the following fields:
+
+Name
+
+Email
+
+Subject
+
+Message
+
+Optional Thread.sleep() to simulate typing delay
+
+Reminder to manually complete CAPTCHA
+
+Optional code to submit the form (commented out)
+
+🚀 Prerequisites
+Java JDK 8 or higher
+
+Maven or your preferred build tool
+
+Selenium WebDriver dependency
+
+Chrome browser installed
+
+ChromeDriver executable added to your system PATH
+
+🛑 CAPTCHA Warning
+This site includes a CAPTCHA, which cannot be bypassed with Selenium alone. Please:
+
+Manually complete the CAPTCHA when prompted
+
+OR disable CAPTCHA if testing in a dev environment
+
+📄 License
+This project is licensed under the MIT License.
