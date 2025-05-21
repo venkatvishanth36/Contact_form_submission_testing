@@ -1,0 +1,56 @@
+This project is a Selenium automation script that fills out the contact form on GlobalSQA's Contact Page. 
+It also demonstrates exception handling with screenshot capture on failure, aiding in debugging and traceability.
+
+🚀 Features
+✅ Automates form filling (name, email, subject, message)
+
+📸 Captures a screenshot if any exception occurs
+
+🧪 Uses explicit waits for reliable element detection
+
+🔐 CAPTCHA-aware: does not attempt to bypass CAPTCHA
+
+📁 Creates a screenshots/ folder with timestamped error screenshots
+
+🛠️ Requirements
+Java 8 or above
+
+Selenium WebDriver
+
+Chrome browser + ChromeDriver installed
+
+Internet connection
+
+🔧 How It Works
+Opens the GlobalSQA Contact Us page
+
+Fills in the name, email, subject, and message fields
+
+Awaits CAPTCHA manual completion (not bypassed in this script)
+
+If any exception occurs (e.g., wrong locator), it:
+
+Prints the error to the console
+
+Takes a screenshot and saves it with a timestamp in screenshots/
+
+🧪 Example Output
+
+! Error occurred: Expected condition failed: waiting for visibility of element located by By.id: comment-name
+📸 Screenshot saved to: /screenshots/ContactFormError_20250513_140626.png
+
+⚠️ Notes
+The id used in the code comment-name is incorrect (should be comment_name).
+
+CAPTCHA is not bypassed. You must manually complete it to submit the form.
+
+Screenshot code ensures better debugging for flaky or failing tests.
+
+✅ TODO (Future Improvements)
+ Convert hardcoded data to use CSV/JSON (data-driven testing)
+
+ Integrate with TestNG or JUnit for assertions and reporting
+
+ Add headless mode for CI pipelines
+
+ Optionally integrate third-party CAPTCHA solvers (where permitted)
